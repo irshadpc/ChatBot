@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58040B4C1D86DF8900E90B6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58040B4B1D86DF8900E90B6D /* AppDelegate.swift */; };
+		58040B4E1D86DF8900E90B6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58040B4D1D86DF8900E90B6D /* ViewController.swift */; };
+		58040B511D86DF8900E90B6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58040B4F1D86DF8900E90B6D /* Main.storyboard */; };
+		58040B531D86DF8900E90B6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58040B521D86DF8900E90B6D /* Assets.xcassets */; };
+		58040B561D86DF8900E90B6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58040B541D86DF8900E90B6D /* LaunchScreen.storyboard */; };
+		FF280CC957E65AD17B192403 /* Pods_FinancialChatBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98CEB78C0CFE04763CB06D8 /* Pods_FinancialChatBot.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18EAF1C76E971D3F9D15DAE3 /* Pods-FinancialChatBot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinancialChatBot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinancialChatBot/Pods-FinancialChatBot.debug.xcconfig"; sourceTree = "<group>"; };
+		4514BFB98CDCDF9D1B98F274 /* Pods-FinancialChatBot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinancialChatBot.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinancialChatBot/Pods-FinancialChatBot.release.xcconfig"; sourceTree = "<group>"; };
+		58040B481D86DF8900E90B6D /* FinancialChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancialChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58040B4B1D86DF8900E90B6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		58040B4D1D86DF8900E90B6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		58040B501D86DF8900E90B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58040B521D86DF8900E90B6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58040B551D86DF8900E90B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		58040B571D86DF8900E90B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B98CEB78C0CFE04763CB06D8 /* Pods_FinancialChatBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinancialChatBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58040B451D86DF8900E90B6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF280CC957E65AD17B192403 /* Pods_FinancialChatBot.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01A8FE5580B698F13548658F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18EAF1C76E971D3F9D15DAE3 /* Pods-FinancialChatBot.debug.xcconfig */,
+				4514BFB98CDCDF9D1B98F274 /* Pods-FinancialChatBot.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		58040B3F1D86DF8900E90B6D = {
+			isa = PBXGroup;
+			children = (
+				58040B4A1D86DF8900E90B6D /* FinancialChatBot */,
+				58040B491D86DF8900E90B6D /* Products */,
+				01A8FE5580B698F13548658F /* Pods */,
+				5F886A38A43DAC400E40A04C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		58040B491D86DF8900E90B6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58040B481D86DF8900E90B6D /* FinancialChatBot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58040B4A1D86DF8900E90B6D /* FinancialChatBot */ = {
+			isa = PBXGroup;
+			children = (
+				58040B5D1D86DFA400E90B6D /* Resources */,
+				58040B4B1D86DF8900E90B6D /* AppDelegate.swift */,
+				58040B4D1D86DF8900E90B6D /* ViewController.swift */,
+				58040B571D86DF8900E90B6D /* Info.plist */,
+			);
+			path = FinancialChatBot;
+			sourceTree = "<group>";
+		};
+		58040B5D1D86DFA400E90B6D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				58040B4F1D86DF8900E90B6D /* Main.storyboard */,
+				58040B521D86DF8900E90B6D /* Assets.xcassets */,
+				58040B541D86DF8900E90B6D /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5F886A38A43DAC400E40A04C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B98CEB78C0CFE04763CB06D8 /* Pods_FinancialChatBot.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58040B471D86DF8900E90B6D /* FinancialChatBot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58040B5A1D86DF8900E90B6D /* Build configuration list for PBXNativeTarget "FinancialChatBot" */;
+			buildPhases = (
+				D4B119FEB9B4B34B078B04AC /* [CP] Check Pods Manifest.lock */,
+				58040B441D86DF8900E90B6D /* Sources */,
+				58040B451D86DF8900E90B6D /* Frameworks */,
+				58040B461D86DF8900E90B6D /* Resources */,
+				92DDCA514F7789FCB199FDC3 /* [CP] Embed Pods Frameworks */,
+				E0D3E0B52D1E6598489CE309 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinancialChatBot;
+			productName = FinancialChatBot;
+			productReference = 58040B481D86DF8900E90B6D /* FinancialChatBot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58040B401D86DF8900E90B6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Andrew Denisov";
+				TargetAttributes = {
+					58040B471D86DF8900E90B6D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 58040B431D86DF8900E90B6D /* Build configuration list for PBXProject "FinancialChatBot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58040B3F1D86DF8900E90B6D;
+			productRefGroup = 58040B491D86DF8900E90B6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58040B471D86DF8900E90B6D /* FinancialChatBot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58040B461D86DF8900E90B6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58040B561D86DF8900E90B6D /* LaunchScreen.storyboard in Resources */,
+				58040B531D86DF8900E90B6D /* Assets.xcassets in Resources */,
+				58040B511D86DF8900E90B6D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		92DDCA514F7789FCB199FDC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FinancialChatBot/Pods-FinancialChatBot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4B119FEB9B4B34B078B04AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E0D3E0B52D1E6598489CE309 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FinancialChatBot/Pods-FinancialChatBot-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58040B441D86DF8900E90B6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58040B4E1D86DF8900E90B6D /* ViewController.swift in Sources */,
+				58040B4C1D86DF8900E90B6D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		58040B4F1D86DF8900E90B6D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58040B501D86DF8900E90B6D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		58040B541D86DF8900E90B6D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58040B551D86DF8900E90B6D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58040B581D86DF8900E90B6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		58040B591D86DF8900E90B6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58040B5B1D86DF8900E90B6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18EAF1C76E971D3F9D15DAE3 /* Pods-FinancialChatBot.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FinancialChatBot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = adenisov.devchallenge.FinancialChatBot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		58040B5C1D86DF8900E90B6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4514BFB98CDCDF9D1B98F274 /* Pods-FinancialChatBot.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FinancialChatBot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = adenisov.devchallenge.FinancialChatBot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58040B431D86DF8900E90B6D /* Build configuration list for PBXProject "FinancialChatBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58040B581D86DF8900E90B6D /* Debug */,
+				58040B591D86DF8900E90B6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58040B5A1D86DF8900E90B6D /* Build configuration list for PBXNativeTarget "FinancialChatBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58040B5B1D86DF8900E90B6D /* Debug */,
+				58040B5C1D86DF8900E90B6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58040B401D86DF8900E90B6D /* Project object */;
+}
