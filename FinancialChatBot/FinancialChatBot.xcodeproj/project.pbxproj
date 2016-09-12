@@ -24,6 +24,7 @@
 		58040B771D87034200E90B6D /* DefaultOutputService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58040B761D87034200E90B6D /* DefaultOutputService.swift */; };
 		58040B791D87046000E90B6D /* EmptyLogicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58040B781D87046000E90B6D /* EmptyLogicService.swift */; };
 		58040B7B1D8704D900E90B6D /* HashStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58040B7A1D8704D900E90B6D /* HashStorageService.swift */; };
+		58040B7D1D8710D700E90B6D /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58040B7C1D8710D700E90B6D /* MessagesViewController.swift */; };
 		FF280CC957E65AD17B192403 /* Pods_FinancialChatBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98CEB78C0CFE04763CB06D8 /* Pods_FinancialChatBot.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,8 @@
 		58040B761D87034200E90B6D /* DefaultOutputService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultOutputService.swift; sourceTree = "<group>"; };
 		58040B781D87046000E90B6D /* EmptyLogicService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyLogicService.swift; sourceTree = "<group>"; };
 		58040B7A1D8704D900E90B6D /* HashStorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashStorageService.swift; sourceTree = "<group>"; };
+		58040B7C1D8710D700E90B6D /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		58040B7E1D87116800E90B6D /* FinancialChatBot-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FinancialChatBot-Bridging-Header.h"; sourceTree = "<group>"; };
 		B98CEB78C0CFE04763CB06D8 /* Pods_FinancialChatBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinancialChatBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -76,6 +79,7 @@
 		58040B3F1D86DF8900E90B6D = {
 			isa = PBXGroup;
 			children = (
+				58040B7E1D87116800E90B6D /* FinancialChatBot-Bridging-Header.h */,
 				58040B4A1D86DF8900E90B6D /* FinancialChatBot */,
 				58040B491D86DF8900E90B6D /* Products */,
 				01A8FE5580B698F13548658F /* Pods */,
@@ -168,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				58040B4D1D86DF8900E90B6D /* ViewController.swift */,
+				58040B7C1D8710D700E90B6D /* MessagesViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -302,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58040B7D1D8710D700E90B6D /* MessagesViewController.swift in Sources */,
 				58040B661D86F1CE00E90B6D /* OutputService.swift in Sources */,
 				58040B6E1D86F3B500E90B6D /* ChatStatement.swift in Sources */,
 				58040B601D86F16300E90B6D /* ChatEngine.swift in Sources */,
@@ -433,6 +439,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = adenisov.devchallenge.FinancialChatBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FinancialChatBot-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -445,6 +452,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = adenisov.devchallenge.FinancialChatBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FinancialChatBot-Bridging-Header.h";
 			};
 			name = Release;
 		};

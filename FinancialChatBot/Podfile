@@ -6,5 +6,6 @@ target 'FinancialChatBot' do
   use_frameworks!
 
   # Pods for FinancialChatBot
+  pod 'JSQMessagesViewController'
 
 end
