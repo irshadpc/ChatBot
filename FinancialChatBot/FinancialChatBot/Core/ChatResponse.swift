@@ -10,5 +10,11 @@ import Foundation
 
 
 struct ChatResponse {
+    var text : String
+    var occurrence : Int
     
+    
+    mutating func updateOccurrence() {
+        self.occurrence = self.occurrence + 1
+    }
 }
