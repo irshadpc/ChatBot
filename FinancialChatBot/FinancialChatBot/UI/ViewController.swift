@@ -26,6 +26,9 @@ class ViewController: UIViewController {
         self.chat = ChatEngine(storage: storage, input: input, output: output, logic: logic)
     }
     
+    func setupMessageList() {
+    }
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -33,11 +36,5 @@ class ViewController: UIViewController {
         let response = self.chat!.getResponse(input)
         print(response)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
-
 }
 

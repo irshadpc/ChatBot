@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 protocol ChatService {
     var context : ChatContext? { get set }
 }

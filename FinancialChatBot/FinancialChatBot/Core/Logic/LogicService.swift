@@ -9,10 +9,11 @@
 import Foundation
 
 
-protocol LogicService  {
+protocol LogicService   {
     func canProcessInput(input:ChatStatement) -> Bool
     func processInput(input:ChatStatement) -> (ChatStatement, Float)
 }
+
 
 extension LogicService {
     // Default implementation without no logic

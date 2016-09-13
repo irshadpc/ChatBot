@@ -25,6 +25,7 @@
 		58040B791D87046000E90B6D /* EmptyLogicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58040B781D87046000E90B6D /* EmptyLogicService.swift */; };
 		58040B7B1D8704D900E90B6D /* HashStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58040B7A1D8704D900E90B6D /* HashStorageService.swift */; };
 		58040B7D1D8710D700E90B6D /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58040B7C1D8710D700E90B6D /* MessagesViewController.swift */; };
+		84F452FD1D87699800BC075B /* SpentRemainingLogicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F452FC1D87699800BC075B /* SpentRemainingLogicService.swift */; };
 		FF280CC957E65AD17B192403 /* Pods_FinancialChatBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98CEB78C0CFE04763CB06D8 /* Pods_FinancialChatBot.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		58040B7A1D8704D900E90B6D /* HashStorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashStorageService.swift; sourceTree = "<group>"; };
 		58040B7C1D8710D700E90B6D /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		58040B7E1D87116800E90B6D /* FinancialChatBot-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FinancialChatBot-Bridging-Header.h"; sourceTree = "<group>"; };
+		84F452FC1D87699800BC075B /* SpentRemainingLogicService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpentRemainingLogicService.swift; sourceTree = "<group>"; };
 		B98CEB78C0CFE04763CB06D8 /* Pods_FinancialChatBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinancialChatBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -137,6 +139,7 @@
 				58040B671D86F1DC00E90B6D /* LogicService.swift */,
 				58040B721D86FED600E90B6D /* MultiLogicService.swift */,
 				58040B781D87046000E90B6D /* EmptyLogicService.swift */,
+				84F452FC1D87699800BC075B /* SpentRemainingLogicService.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -171,8 +174,8 @@
 		58040B711D86FCFA00E90B6D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				84F452F51D87662900BC075B /* MessageComponent */,
 				58040B4D1D86DF8900E90B6D /* ViewController.swift */,
-				58040B7C1D8710D700E90B6D /* MessagesViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -183,6 +186,14 @@
 				B98CEB78C0CFE04763CB06D8 /* Pods_FinancialChatBot.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84F452F51D87662900BC075B /* MessageComponent */ = {
+			isa = PBXGroup;
+			children = (
+				58040B7C1D8710D700E90B6D /* MessagesViewController.swift */,
+			);
+			path = MessageComponent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +330,7 @@
 				58040B751D87030100E90B6D /* DefaultInputService.swift in Sources */,
 				58040B791D87046000E90B6D /* EmptyLogicService.swift in Sources */,
 				58040B731D86FED600E90B6D /* MultiLogicService.swift in Sources */,
+				84F452FD1D87699800BC075B /* SpentRemainingLogicService.swift in Sources */,
 				58040B4E1D86DF8900E90B6D /* ViewController.swift in Sources */,
 				58040B4C1D86DF8900E90B6D /* AppDelegate.swift in Sources */,
 				58040B621D86F1AC00E90B6D /* StorageService.swift in Sources */,
@@ -436,10 +448,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FinancialChatBot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = adenisov.devchallenge.FinancialChatBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FinancialChatBot-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -449,10 +463,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FinancialChatBot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = adenisov.devchallenge.FinancialChatBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FinancialChatBot-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
