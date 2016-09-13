@@ -11,6 +11,9 @@ import UIKit
 class ViewController: UIViewController {
     
     var chat : ChatEngine?
+    private lazy var messageController : MessagesViewController = {
+       return MessagesViewController()
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +38,24 @@ class ViewController: UIViewController {
         let input = InputType.Text("Simple text")
         let response = self.chat!.getResponse(input)
         print(response)
+        
+        self.setupMessageUI()
+    }
+
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+
+    }
+    
+    func setupMessageUI() {
+        messageController.senderId = "Andrew"
+        messageController.senderDisplayName = "Andrew"
+        messageController.willMoveToParentViewController(self)
+        self.addChildViewController(messageController)
+        view.addSubview(messageController.view)
+        messageController.view.frame = view.frame
+        messageController.didMoveToParentViewController(self)
     }
 }
 

@@ -7,5 +7,6 @@ target 'FinancialChatBot' do
 
   # Pods for FinancialChatBot
   pod 'JSQMessagesViewController'
+  pod 'Bayes', git: 'https://github.com/fcanas/Bayes.git'
 
 end
