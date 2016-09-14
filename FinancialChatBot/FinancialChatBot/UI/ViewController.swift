@@ -20,25 +20,8 @@ class ViewController: UIViewController {
         setupChatEngine()
     }
     
-    func setupChatEngine() {
-        let input = DefaultInputService()
-        let logic = EmptyLogicService()
-        let output = DefaultOutputService()
-        let storage = HashStorageService()
-        
-        self.chat = ChatEngine(storage: storage, input: input, output: output, logic: logic)
-    }
-    
-    func setupMessageList() {
-    }
-    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
-        let input = InputType.Text("Simple text")
-        let response = self.chat!.getResponse(input)
-        print(response)
-        
         self.setupMessageUI()
     }
 
@@ -56,6 +39,37 @@ class ViewController: UIViewController {
         view.addSubview(messageController.view)
         messageController.view.frame = view.frame
         messageController.didMoveToParentViewController(self)
+        
+        messageController.userSendNewMessage = { (message:Message) in
+            self.sendNewMessageToUser(message.messageText)
+        }
     }
+}
+
+private extension ViewController {
+    
+    func setupChatEngine() {
+        let input = DefaultInputService()
+        let logic = EmptyLogicService()
+        let output = DefaultOutputService()
+        let storage = HashStorageService()
+        
+        self.chat = ChatEngine(storage: storage, input: input, output: output, logic: logic)
+        
+        self.chat!.sendResponse = { response in
+            self.sendNewMessageToUser(response)
+        }
+    }
+    
+    func sendNewMessageToEngine(text:String) {
+        guard let engine = self.chat else { return }
+        let input = InputType.Text(text)
+        engine.processResponse(input)
+    }
+    
+    func sendNewMessageToUser(text:String) {
+        messageController.engineSendMessage(text, sender: "Bot")
+    }
+
 }
 

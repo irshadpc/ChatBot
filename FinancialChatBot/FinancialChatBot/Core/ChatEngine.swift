@@ -22,6 +22,8 @@ protocol ChatContext {
 
 struct ChatEngine : ChatContext {
     
+    var sendResponse: (String -> Void) = {_ in}
+    
     var storage: StorageService
     var input: InputService
     var ouput: OutputService
@@ -41,9 +43,10 @@ struct ChatEngine : ChatContext {
     
     }
     
-    func getResponse(input:InputType) -> String {
+    func processResponse(input:InputType) {
         let statement = self.input.processInput(input)
-        return self.ouput.processResponse(statement)
+        let response = self.ouput.processResponse(statement)
+        sendResponse(response)
     }
 }
 

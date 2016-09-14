@@ -12,9 +12,12 @@ import JSQMessagesViewController
 
 class MessagesViewController :  JSQMessagesViewController {
     
+    var userSendNewMessage: (Message -> Void)?
+    
     private lazy var messages :[Message] = {
        return []
     }()
+
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -24,6 +27,18 @@ class MessagesViewController :  JSQMessagesViewController {
     func sendMessage(text: String!, sender: String!) {
         let message = Message(text: text, sender: sender, imageUrl: nil)
         messages.append(message)
+        reportUserSendNewMessage(message)
+    }
+    
+    func engineSendMessage(text:String, sender:String) {
+        let message = Message(text: text, sender: sender, imageUrl: nil)
+        messages.append(message)
+        print(text)
+    }
+    
+    func reportUserSendNewMessage(message: Message) {
+        guard let userSendNewMessage = userSendNewMessage else { return }
+        userSendNewMessage(message)
     }
     
     override func didPressSendButton(button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: NSDate!) {
