@@ -190,7 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				8438BD391D891E44003FD598 /* Reports */,
-				84F452F51D87662900BC075B /* MessageComponent */,
+				84F452F51D87662900BC075B /* Message */,
 				58040B4D1D86DF8900E90B6D /* ViewController.swift */,
 			);
 			path = UI;
@@ -223,13 +223,14 @@
 			path = Reports;
 			sourceTree = "<group>";
 		};
-		84F452F51D87662900BC075B /* MessageComponent */ = {
+		84F452F51D87662900BC075B /* Message */ = {
 			isa = PBXGroup;
 			children = (
 				58040B7C1D8710D700E90B6D /* MessagesViewController.swift */,
 				580DBDC11D88607900D03A76 /* Message.swift */,
 				580DBDFB1D89A8C000D03A76 /* MessageViewDataSource.swift */,
 			);
+			name = Message;
 			path = MessageComponent;
 			sourceTree = "<group>";
 		};
