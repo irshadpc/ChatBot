@@ -26,6 +26,7 @@
 		58040B7B1D8704D900E90B6D /* HashStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58040B7A1D8704D900E90B6D /* HashStorageService.swift */; };
 		58040B7D1D8710D700E90B6D /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58040B7C1D8710D700E90B6D /* MessagesViewController.swift */; };
 		580DBDC21D88607900D03A76 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580DBDC11D88607900D03A76 /* Message.swift */; };
+		580DBDFC1D89A8C000D03A76 /* MessageViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580DBDFB1D89A8C000D03A76 /* MessageViewDataSource.swift */; };
 		8438BD3B1D891E78003FD598 /* ReportLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438BD3A1D891E78003FD598 /* ReportLayout.swift */; };
 		8438BD3D1D891E8F003FD598 /* ReportRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438BD3C1D891E8F003FD598 /* ReportRenderer.swift */; };
 		8438BD3F1D891EA5003FD598 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438BD3E1D891EA5003FD598 /* ReportViewController.swift */; };
@@ -58,6 +59,7 @@
 		58040B7C1D8710D700E90B6D /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		58040B7E1D87116800E90B6D /* FinancialChatBot-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FinancialChatBot-Bridging-Header.h"; sourceTree = "<group>"; };
 		580DBDC11D88607900D03A76 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		580DBDFB1D89A8C000D03A76 /* MessageViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewDataSource.swift; sourceTree = "<group>"; };
 		8438BD3A1D891E78003FD598 /* ReportLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportLayout.swift; sourceTree = "<group>"; };
 		8438BD3C1D891E8F003FD598 /* ReportRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportRenderer.swift; sourceTree = "<group>"; };
 		8438BD3E1D891EA5003FD598 /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 			children = (
 				58040B7C1D8710D700E90B6D /* MessagesViewController.swift */,
 				580DBDC11D88607900D03A76 /* Message.swift */,
+				580DBDFB1D89A8C000D03A76 /* MessageViewDataSource.swift */,
 			);
 			path = MessageComponent;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				58040B601D86F16300E90B6D /* ChatEngine.swift in Sources */,
 				58040B681D86F1DC00E90B6D /* LogicService.swift in Sources */,
 				8438BD3F1D891EA5003FD598 /* ReportViewController.swift in Sources */,
+				580DBDFC1D89A8C000D03A76 /* MessageViewDataSource.swift in Sources */,
 				58040B771D87034200E90B6D /* DefaultOutputService.swift in Sources */,
 				58040B701D86F41E00E90B6D /* ChatResponse.swift in Sources */,
 				58040B641D86F1BA00E90B6D /* InputService.swift in Sources */,
