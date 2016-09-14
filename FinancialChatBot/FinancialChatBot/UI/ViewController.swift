@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-
+        self.sendNewMessageToEngine("Я тут истратил на еду 35 грн ")
     }
     
     func setupMessageUI() {
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         messageController.didMoveToParentViewController(self)
         
         messageController.userSendNewMessage = { (message:Message) in
-            self.sendNewMessageToUser(message.messageText)
+            self.sendNewMessageToEngine(message.messageText)
         }
     }
 }
@@ -50,15 +50,21 @@ private extension ViewController {
     
     func setupChatEngine() {
         let input = DefaultInputService()
-        let logic = EmptyLogicService()
         let output = DefaultOutputService()
         let storage = HashStorageService()
-        
-        self.chat = ChatEngine(storage: storage, input: input, output: output, logic: logic)
+    
+        self.chat = ChatEngine(storage: storage, input: input, output: output, logic: self.logic())
         
         self.chat!.sendResponse = { response in
             self.sendNewMessageToUser(response)
         }
+    }
+    
+    func logic() -> LogicService {
+        let empty = EmptyLogicService()
+        let spentRemainingLogic = SpentRemainingLogicService()
+        let logic = MultiLogicService(services: [empty,spentRemainingLogic])
+        return logic
     }
     
     func sendNewMessageToEngine(text:String) {

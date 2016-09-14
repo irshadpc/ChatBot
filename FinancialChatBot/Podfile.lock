@@ -1,27 +1,18 @@
 PODS:
-  - Bayes (0.0.1)
   - JSQMessagesViewController (7.3.4):
     - JSQSystemSoundPlayer (~> 2.0.1)
   - JSQSystemSoundPlayer (2.0.1)
+  - Parsimmon (0.5.0)
 
 DEPENDENCIES:
-  - Bayes (from `https://github.com/fcanas/Bayes.git`)
   - JSQMessagesViewController
-
-EXTERNAL SOURCES:
-  Bayes:
-    :git: https://github.com/fcanas/Bayes.git
-
-CHECKOUT OPTIONS:
-  Bayes:
-    :commit: d3e359502b7079ceae6b26a27e6c9fed8955a1f3
-    :git: https://github.com/fcanas/Bayes.git
+  - Parsimmon (~> 0.5.0)
 
 SPEC CHECKSUMS:
-  Bayes: 7ca5d78637f3366c28adbe04f11e8d6d6847f801
   JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  Parsimmon: db98d89de71c085dbc7e839f1296dc73cdeb94bb
 
-PODFILE CHECKSUM: 7d1360414bad0402694a489b6f7cfad031082abd
+PODFILE CHECKSUM: 7ab13d91f8fc30d1d1766861c815fce6d188a6ec
 
 COCOAPODS: 1.0.1

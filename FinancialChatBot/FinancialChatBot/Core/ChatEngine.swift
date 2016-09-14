@@ -45,7 +45,8 @@ struct ChatEngine : ChatContext {
     
     func processResponse(input:InputType) {
         let statement = self.input.processInput(input)
-        let response = self.ouput.processResponse(statement)
+        let (logicStatement,_) = self.logic.processInput(statement)
+        let response = self.ouput.processResponse(logicStatement)
         sendResponse(response)
     }
 }

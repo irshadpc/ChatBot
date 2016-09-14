@@ -58,5 +58,6 @@ extension MessageControllerPublicMethods {
         let message = Message(text: text, sender: sender, imageUrl: nil)
         messages.append(message)
         print(text)
+        self.collectionView.reloadData()
     }
 }
