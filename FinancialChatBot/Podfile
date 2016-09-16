@@ -9,6 +9,6 @@ target 'FinancialChatBot' do
   pod 'JSQMessagesViewController'
   pod 'Parsimmon', '~> 0.5.0'
   pod 'PNChart'
-  pod 'UIView+AutoLayout'
+  pod 'FLKAutoLayout', '~> 1.0.0'
 
 end

@@ -25,12 +25,13 @@
 		58040B791D87046000E90B6D /* EmptyLogicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58040B781D87046000E90B6D /* EmptyLogicService.swift */; };
 		58040B7B1D8704D900E90B6D /* HashStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58040B7A1D8704D900E90B6D /* HashStorageService.swift */; };
 		58040B7D1D8710D700E90B6D /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58040B7C1D8710D700E90B6D /* MessagesViewController.swift */; };
+		58055C911D8C4496000893C8 /* ReportStylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58055C901D8C4496000893C8 /* ReportStylesheet.swift */; };
+		58055C931D8C44FB000893C8 /* ReportLogicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58055C921D8C44FB000893C8 /* ReportLogicService.swift */; };
 		580DBDC21D88607900D03A76 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580DBDC11D88607900D03A76 /* Message.swift */; };
 		580DBDFC1D89A8C000D03A76 /* MessageViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580DBDFB1D89A8C000D03A76 /* MessageViewDataSource.swift */; };
 		580DBDFF1D89BB9200D03A76 /* TrainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580DBDFE1D89BB9200D03A76 /* TrainDataSource.swift */; };
 		580DBE011D89BBD800D03A76 /* Trainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580DBE001D89BBD800D03A76 /* Trainer.swift */; };
 		8438BD3B1D891E78003FD598 /* ReportLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438BD3A1D891E78003FD598 /* ReportLayout.swift */; };
-		8438BD3D1D891E8F003FD598 /* ReportRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438BD3C1D891E8F003FD598 /* ReportRenderer.swift */; };
 		8438BD3F1D891EA5003FD598 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438BD3E1D891EA5003FD598 /* ReportViewController.swift */; };
 		84F452FD1D87699800BC075B /* SpentRemainingLogicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F452FC1D87699800BC075B /* SpentRemainingLogicService.swift */; };
 		FF280CC957E65AD17B192403 /* Pods_FinancialChatBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98CEB78C0CFE04763CB06D8 /* Pods_FinancialChatBot.framework */; };
@@ -60,12 +61,13 @@
 		58040B7A1D8704D900E90B6D /* HashStorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashStorageService.swift; sourceTree = "<group>"; };
 		58040B7C1D8710D700E90B6D /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		58040B7E1D87116800E90B6D /* FinancialChatBot-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FinancialChatBot-Bridging-Header.h"; sourceTree = "<group>"; };
+		58055C901D8C4496000893C8 /* ReportStylesheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportStylesheet.swift; sourceTree = "<group>"; };
+		58055C921D8C44FB000893C8 /* ReportLogicService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportLogicService.swift; sourceTree = "<group>"; };
 		580DBDC11D88607900D03A76 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		580DBDFB1D89A8C000D03A76 /* MessageViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewDataSource.swift; sourceTree = "<group>"; };
 		580DBDFE1D89BB9200D03A76 /* TrainDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainDataSource.swift; sourceTree = "<group>"; };
 		580DBE001D89BBD800D03A76 /* Trainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trainer.swift; sourceTree = "<group>"; };
 		8438BD3A1D891E78003FD598 /* ReportLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportLayout.swift; sourceTree = "<group>"; };
-		8438BD3C1D891E8F003FD598 /* ReportRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportRenderer.swift; sourceTree = "<group>"; };
 		8438BD3E1D891EA5003FD598 /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		84F452FC1D87699800BC075B /* SpentRemainingLogicService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpentRemainingLogicService.swift; sourceTree = "<group>"; };
 		B98CEB78C0CFE04763CB06D8 /* Pods_FinancialChatBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinancialChatBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +157,7 @@
 				58040B721D86FED600E90B6D /* MultiLogicService.swift */,
 				58040B781D87046000E90B6D /* EmptyLogicService.swift */,
 				84F452FC1D87699800BC075B /* SpentRemainingLogicService.swift */,
+				58055C921D8C44FB000893C8 /* ReportLogicService.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -217,7 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				8438BD3A1D891E78003FD598 /* ReportLayout.swift */,
-				8438BD3C1D891E8F003FD598 /* ReportRenderer.swift */,
+				58055C901D8C4496000893C8 /* ReportStylesheet.swift */,
 				8438BD3E1D891EA5003FD598 /* ReportViewController.swift */,
 			);
 			path = Reports;
@@ -356,13 +359,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8438BD3D1D891E8F003FD598 /* ReportRenderer.swift in Sources */,
 				58040B7D1D8710D700E90B6D /* MessagesViewController.swift in Sources */,
 				8438BD3B1D891E78003FD598 /* ReportLayout.swift in Sources */,
 				580DBE011D89BBD800D03A76 /* Trainer.swift in Sources */,
 				58040B661D86F1CE00E90B6D /* OutputService.swift in Sources */,
 				58040B6E1D86F3B500E90B6D /* ChatStatement.swift in Sources */,
 				580DBDC21D88607900D03A76 /* Message.swift in Sources */,
+				58055C931D8C44FB000893C8 /* ReportLogicService.swift in Sources */,
+				58055C911D8C4496000893C8 /* ReportStylesheet.swift in Sources */,
 				58040B601D86F16300E90B6D /* ChatEngine.swift in Sources */,
 				58040B681D86F1DC00E90B6D /* LogicService.swift in Sources */,
 				8438BD3F1D891EA5003FD598 /* ReportViewController.swift in Sources */,

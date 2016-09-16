@@ -30,3 +30,12 @@ struct RemainingDataSource : TrainDataSource {
         ]
     }
 }
+
+struct ReportDataSource : TrainDataSource {
+    
+    func trainData() -> [String] {
+        return [
+            "покажи мне отчет","сформируй отчет", "отчет", "давай отчет за месяц","сколько я потратил?"
+        ]
+    }
+}

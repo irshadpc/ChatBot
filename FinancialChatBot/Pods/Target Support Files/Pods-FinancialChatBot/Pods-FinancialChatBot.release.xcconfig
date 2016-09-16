@@ -1,9 +1,9 @@
 EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/JSQMessagesViewController" "$PODS_CONFIGURATION_BUILD_DIR/JSQSystemSoundPlayer" "$PODS_CONFIGURATION_BUILD_DIR/PNChart" "$PODS_CONFIGURATION_BUILD_DIR/Parsimmon" "$PODS_CONFIGURATION_BUILD_DIR/UICountingLabel" "$PODS_CONFIGURATION_BUILD_DIR/UIView+AutoLayout"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/FLKAutoLayout" "$PODS_CONFIGURATION_BUILD_DIR/JSQMessagesViewController" "$PODS_CONFIGURATION_BUILD_DIR/JSQSystemSoundPlayer" "$PODS_CONFIGURATION_BUILD_DIR/PNChart" "$PODS_CONFIGURATION_BUILD_DIR/Parsimmon" "$PODS_CONFIGURATION_BUILD_DIR/UICountingLabel"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/JSQMessagesViewController/JSQMessagesViewController.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/PNChart/PNChart.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Parsimmon/Parsimmon.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/UICountingLabel/UICountingLabel.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/UIView+AutoLayout/UIView_AutoLayout.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "JSQMessagesViewController" -framework "JSQSystemSoundPlayer" -framework "PNChart" -framework "Parsimmon" -framework "UICountingLabel" -framework "UIView_AutoLayout"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/FLKAutoLayout/FLKAutoLayout.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/JSQMessagesViewController/JSQMessagesViewController.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/PNChart/PNChart.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Parsimmon/Parsimmon.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/UICountingLabel/UICountingLabel.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "FLKAutoLayout" -framework "JSQMessagesViewController" -framework "JSQSystemSoundPlayer" -framework "PNChart" -framework "Parsimmon" -framework "UICountingLabel"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

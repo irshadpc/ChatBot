@@ -9,9 +9,10 @@
 import Foundation
 import Parsimmon
 
-enum FinancialAction : String {
+public enum FinancialAction : String {
     case Spent
     case Remaining
+    case Report
 }
 
 enum FinancialCategory : String {
@@ -24,6 +25,8 @@ struct SpentRemainingLogicService : LogicService {
     let classifier : NaiveBayesClassifier = {
         return NaiveBayesClassifier()
     }()
+    
+    private let targetCategories = [FinancialAction.Spent.rawValue, FinancialAction.Remaining.rawValue]
     
     init() {
         
@@ -38,13 +41,11 @@ struct SpentRemainingLogicService : LogicService {
         let lemmatizedTokens = token.tokenize(input.text)
         print(lemmatizedTokens)
         
-        lemmatizedTokens.forEach { item in
-           print(classifier.classify(item))
-        }
         
         let tagger = Tagger()
         let taggedTokens = tagger.tagWordsInText(input.text)
         print(taggedTokens)
+
         
         return (input,0)
     }

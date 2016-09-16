@@ -24,11 +24,15 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         self.setupMessageUI()
     }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
 
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        self.sendNewMessageToEngine("Я тут истратил на еду 35 грн ")
+        self.sendNewMessageToEngine("Сколько я трачу")
     }
     
     func setupMessageUI() {
@@ -37,8 +41,8 @@ class ViewController: UIViewController {
         messageController.willMoveToParentViewController(self)
         self.addChildViewController(messageController)
         view.addSubview(messageController.view)
-        messageController.view.frame = view.frame
         messageController.didMoveToParentViewController(self)
+        messageController.view.alignToView(self.view)
         
         messageController.userSendNewMessage = { (message:Message) in
             self.sendNewMessageToEngine(message.messageText)
@@ -61,9 +65,10 @@ private extension ViewController {
     }
     
     func logic() -> LogicService {
-        let empty = EmptyLogicService()
+
         let spentRemainingLogic = SpentRemainingLogicService()
-        let logic = MultiLogicService(services: [empty,spentRemainingLogic])
+        let reportLogic = ReportLogicService()
+        let logic = MultiLogicService(services: [spentRemainingLogic,reportLogic])
         return logic
     }
     

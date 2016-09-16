@@ -1,4 +1,5 @@
 PODS:
+  - FLKAutoLayout (1.0.0)
   - JSQMessagesViewController (7.3.4):
     - JSQSystemSoundPlayer (~> 2.0.1)
   - JSQSystemSoundPlayer (2.0.1)
@@ -6,22 +7,21 @@ PODS:
   - PNChart (0.8.9):
     - UICountingLabel (~> 1.2.0)
   - UICountingLabel (1.2.0)
-  - UIView+AutoLayout (2.0.1)
 
 DEPENDENCIES:
+  - FLKAutoLayout (~> 1.0.0)
   - JSQMessagesViewController
   - Parsimmon (~> 0.5.0)
   - PNChart
-  - UIView+AutoLayout
 
 SPEC CHECKSUMS:
+  FLKAutoLayout: 106b14dbae09d32c6730190f4e78a959759ba4a4
   JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   Parsimmon: db98d89de71c085dbc7e839f1296dc73cdeb94bb
   PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
-  UIView+AutoLayout: 9eb76d5e72974e5b96c0350624d8f17ddb405ee0
 
-PODFILE CHECKSUM: 6343b50719070fb4413fcc28c22397789a7de1a0
+PODFILE CHECKSUM: 08b4481b02413d4f19d76b02c9e8eb9dc70dd879
 
 COCOAPODS: 1.0.1

@@ -9,7 +9,9 @@
 #ifndef FinancialChatBot_Bridging_Header_h_h
 #define FinancialChatBot_Bridging_Header_h_h
 
-#import <JSQMessagesViewController/JSQMessages.h> 
+#import <JSQMessagesViewController/JSQMessages.h>
+#import <PNChart/PNChart.h>
+#import <FLKAutoLayout/FLKAutoLayout.h>
 
 #endif /* FinancialChatBot_Bridging_Header_h_h */
 
