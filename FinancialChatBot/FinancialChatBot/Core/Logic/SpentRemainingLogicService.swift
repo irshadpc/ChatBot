@@ -22,25 +22,19 @@ enum FinancialCategory : String {
 
 struct SpentRemainingLogicService : LogicService {
     
-    let classifier : NaiveBayesClassifier = {
-        return NaiveBayesClassifier()
-    }()
+    var classifier : CategoryClassifier {
+        return CategoryClassifier.sharedInstance
+    }
     
     private let targetCategories = [FinancialAction.Spent.rawValue, FinancialAction.Remaining.rawValue]
     
-    init() {
-        
-        var trainer = DefaultTrainer()
-        trainer.trainClassifier(SpentDataSource(), classifier: self.classifier, category: FinancialAction.Spent.rawValue)
-        trainer.trainClassifier(RemainingDataSource(), classifier: self.classifier, category: FinancialAction.Remaining.rawValue)
-    }
-    
     func processInput(input:ChatStatement) -> (ChatStatement, Float) {
         
-        let normalizer = StatementNormalizer()
-    
-       // print(normalizer.processTags(input))
-        print(normalizer.tokenize(input))
+        let category = classifier.classify(input.fullText())
+        if targetCategories.contains(category)  {
+            let response = ChatStatement(text: "Принято")
+            return (response,1)
+        }
         
         return (input,0)
     }

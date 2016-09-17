@@ -36,6 +36,7 @@
 		8438BD411D8D1C8D003FD598 /* NormalizedStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438BD401D8D1C8D003FD598 /* NormalizedStatement.swift */; };
 		8438BD441D8D1D5F003FD598 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438BD431D8D1D5F003FD598 /* Category.swift */; };
 		8438BD461D8D1D90003FD598 /* FinancialReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438BD451D8D1D90003FD598 /* FinancialReport.swift */; };
+		849BA1C41D8E05DC00B0F9C4 /* CategoryClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BA1C31D8E05DC00B0F9C4 /* CategoryClassifier.swift */; };
 		84F452FD1D87699800BC075B /* SpentRemainingLogicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F452FC1D87699800BC075B /* SpentRemainingLogicService.swift */; };
 		FF280CC957E65AD17B192403 /* Pods_FinancialChatBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98CEB78C0CFE04763CB06D8 /* Pods_FinancialChatBot.framework */; };
 /* End PBXBuildFile section */
@@ -75,6 +76,7 @@
 		8438BD401D8D1C8D003FD598 /* NormalizedStatement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalizedStatement.swift; sourceTree = "<group>"; };
 		8438BD431D8D1D5F003FD598 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		8438BD451D8D1D90003FD598 /* FinancialReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancialReport.swift; sourceTree = "<group>"; };
+		849BA1C31D8E05DC00B0F9C4 /* CategoryClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryClassifier.swift; sourceTree = "<group>"; };
 		84F452FC1D87699800BC075B /* SpentRemainingLogicService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpentRemainingLogicService.swift; sourceTree = "<group>"; };
 		B98CEB78C0CFE04763CB06D8 /* Pods_FinancialChatBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinancialChatBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -166,6 +168,7 @@
 				84F452FC1D87699800BC075B /* SpentRemainingLogicService.swift */,
 				58055C921D8C44FB000893C8 /* ReportLogicService.swift */,
 				8438BD401D8D1C8D003FD598 /* NormalizedStatement.swift */,
+				849BA1C31D8E05DC00B0F9C4 /* CategoryClassifier.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				58040B4E1D86DF8900E90B6D /* ViewController.swift in Sources */,
 				580DBDFF1D89BB9200D03A76 /* TrainDataSource.swift in Sources */,
 				58040B4C1D86DF8900E90B6D /* AppDelegate.swift in Sources */,
+				849BA1C41D8E05DC00B0F9C4 /* CategoryClassifier.swift in Sources */,
 				58040B621D86F1AC00E90B6D /* StorageService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,19 +19,21 @@ struct ChatStatement {
     }
     
     mutating func add(response:ChatStatement) {
-        
-        //var newQueue = inResponseToQueue.filter { $0.text == response.text}
-        //if newQueue.count == inResponseToQueue.count {
-        //    newQueue.append(response)
-       // }
-        
-        //inResponseToQueue = newQueue
         inResponseToQueue.append(response)
     }
     
     mutating func remove(response:ChatResponse) {
         let newQueue = inResponseToQueue.filter { $0.text == response.text}
         inResponseToQueue = newQueue
-        
+    }
+}
+
+extension ChatStatement {
+    
+    func fullText() -> String {
+        let result = self.inResponseToQueue.reduce(" ", combine: { (text, statement) -> String in
+            return text + " " + statement.text
+        })
+        return result + " " + self.text
     }
 }

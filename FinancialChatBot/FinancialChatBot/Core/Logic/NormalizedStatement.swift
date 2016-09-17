@@ -14,13 +14,16 @@ struct StatementNormalizer {
     
     func processTags(input:ChatStatement) -> [TaggedToken] {
         let tagger = Tagger()
-        let taggedTokens = tagger.tagWordsInText(input.text)
+
+        let fullText = input.fullText()
+        let taggedTokens = tagger.tagWordsInText(fullText)
         return taggedTokens
     }
     
     func tokenize(input:ChatStatement) -> [String] {
         let token = Tokenizer()
-        let tokens = token.tokenize(input.text)
+        let text = input.fullText()
+        let tokens = token.tokenize(text)
         return tokens
     }
 }

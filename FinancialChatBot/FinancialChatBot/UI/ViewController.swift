@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        messageController.sendMessage("Сколько я трачу за месяц и вообще ", sender: "Andrew1")
+        messageController.sendMessage("Покажи мне отчет", sender: "Andrew1")
     }
     
     func setupMessageUI() {

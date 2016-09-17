@@ -11,25 +11,19 @@ import Parsimmon
 
 struct ReportLogicService : LogicService {
     
-    let classifier : NaiveBayesClassifier = {
-        return NaiveBayesClassifier()
-    }()
+    var classifier : CategoryClassifier {
+        return CategoryClassifier.sharedInstance
+    }
     
     let category = FinancialAction.Report.rawValue
     
-    
-    init() {
-        var trainer = DefaultTrainer()
-        trainer.trainClassifier(ReportDataSource(), classifier: self.classifier, category: category)
-    }
-    
     func processInput(input:ChatStatement) -> (ChatStatement, Float) {
         
-        if classifier.classify(input.text) == category  {
+        if classifier.classify(input.fullText()) == category  {
             let response = ChatStatement(text: "Сейчас сформирую отчет")
             return (response,1)
         }
-        
+
         return (input,0)
     }
 
