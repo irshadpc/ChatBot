@@ -34,7 +34,7 @@ struct ReportLogicService : LogicService {
         }
         
         if classifier.classify(input.text) == category  {
-            let response = ChatStatement(text: "Сейчас сформирую")
+            let response = ChatStatement(text: "Сейчас сформирую отчет")
             return (response,1)
         }
         

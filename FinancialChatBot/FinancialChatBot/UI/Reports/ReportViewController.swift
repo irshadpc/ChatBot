@@ -17,8 +17,11 @@ class ReportViewController : UIViewController {
         return chart
     }()
     
-    init(reportData : AnyObject) {
-       super.init(nibName: nil, bundle: nil)
+    private var reportModel : FinancialReport
+    
+    init(reportData : FinancialReport) {
+        self.reportModel = reportData
+        super.init(nibName: nil, bundle: nil)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -40,7 +43,14 @@ private extension ReportViewController {
         
         barChartAttributes.apply(to: barChart)
         reportLayout.layout(chart: barChart, to: self.view)
+        barChart.apply(self.reportModel)
         barChart.strokeChart()
+    }
+}
+
+private extension PNBarChart {
+    func apply (data: FinancialReport) {
+        
     }
 }
 

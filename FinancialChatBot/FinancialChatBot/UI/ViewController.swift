@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        self.sendNewMessageToEngine("Сколько я трачу")
+        messageController.sendMessage("Сколько я трачу за месяц и вообще ", sender: "Andrew1")
     }
     
     func setupMessageUI() {
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         messageController.didMoveToParentViewController(self)
         messageController.view.alignToView(self.view)
         
-        messageController.userSendNewMessage = { (message:Message) in
+        messageController.userSendNewMessage = { [unowned self] (message:Message) in
             self.sendNewMessageToEngine(message.messageText)
         }
     }
