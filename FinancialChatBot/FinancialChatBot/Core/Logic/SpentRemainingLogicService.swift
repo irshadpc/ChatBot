@@ -37,15 +37,10 @@ struct SpentRemainingLogicService : LogicService {
     
     func processInput(input:ChatStatement) -> (ChatStatement, Float) {
         
-        let token = Tokenizer()
-        let lemmatizedTokens = token.tokenize(input.text)
-        print(lemmatizedTokens)
-        
-        
-        let tagger = Tagger()
-        let taggedTokens = tagger.tagWordsInText(input.text)
-        print(taggedTokens)
-
+        let normalizer = StatementNormalizer()
+    
+       // print(normalizer.processTags(input))
+        print(normalizer.tokenize(input))
         
         return (input,0)
     }

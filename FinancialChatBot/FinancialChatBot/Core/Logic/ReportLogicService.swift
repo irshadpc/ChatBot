@@ -25,14 +25,6 @@ struct ReportLogicService : LogicService {
     
     func processInput(input:ChatStatement) -> (ChatStatement, Float) {
         
-        let token = Tokenizer()
-        let lemmatizedTokens = token.tokenize(input.text)
-        print(lemmatizedTokens)
-        
-        lemmatizedTokens.forEach { item in
-            print(classifier.classify(item))
-        }
-        
         if classifier.classify(input.text) == category  {
             let response = ChatStatement(text: "Сейчас сформирую отчет")
             return (response,1)

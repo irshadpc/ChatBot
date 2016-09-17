@@ -10,7 +10,7 @@ import Foundation
 
 struct ChatStatement {
     
-    private var inResponseToQueue : [ChatResponse]
+    private var inResponseToQueue : [ChatStatement]
     let text : String
     
     init(text:String) {
@@ -18,18 +18,15 @@ struct ChatStatement {
         inResponseToQueue = []
     }
     
-    mutating func add(response:ChatResponse) {
+    mutating func add(response:ChatStatement) {
         
-        var newQueue = inResponseToQueue.filter { $0.text == response.text}
-        if newQueue.count == inResponseToQueue.count {
-            newQueue.append(response)
-        } else {
-            for index in 0..<newQueue.count {
-                newQueue[index].updateOccurrence()
-            }
-        }
+        //var newQueue = inResponseToQueue.filter { $0.text == response.text}
+        //if newQueue.count == inResponseToQueue.count {
+        //    newQueue.append(response)
+       // }
         
-        inResponseToQueue = newQueue
+        //inResponseToQueue = newQueue
+        inResponseToQueue.append(response)
     }
     
     mutating func remove(response:ChatResponse) {

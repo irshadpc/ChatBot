@@ -8,11 +8,6 @@
 
 import Foundation
 
-
-protocol ChatService {
-    var context : ChatContext? { get set }
-}
-
 protocol ChatContext {
     var storage: StorageService { get }
     var input: InputService { get }
@@ -20,7 +15,7 @@ protocol ChatContext {
     var logic : LogicService {get}
 }
 
-struct ChatEngine : ChatContext {
+class ChatEngine : ChatContext {
     
     var sendResponse: (String -> Void) = {_ in}
     
@@ -28,6 +23,7 @@ struct ChatEngine : ChatContext {
     var input: InputService
     var ouput: OutputService
     var logic : LogicService
+    var recentStatements : [ChatStatement]
     
     
     init(storage:StorageService, input:InputService, output:OutputService, logic : LogicService) {
@@ -35,19 +31,32 @@ struct ChatEngine : ChatContext {
         self.input = input
         self.ouput = output
         self.logic = logic
-    
-//        self.storage.context = self
-//        self.input.context = self
-//        self.ouput.context = self
-//        self.logic.context = self
-    
+        self.recentStatements = []
     }
     
     func processResponse(input:InputType) {
         let statement = self.input.processInput(input)
-        let (logicStatement,_) = self.logic.processInput(statement)
+        let statementWithResponses = self.updateStatementWithHistory(statement)
+        
+        let (logicStatement,_) = self.logic.processInput(statementWithResponses)
         let response = self.ouput.processResponse(logicStatement)
+        
+        updateHistory(statement)
         sendResponse(response)
     }
+    
+    func updateHistory(newStatement : ChatStatement) {
+        self.recentStatements.append(newStatement)
+    }
+    
+    func updateStatementWithHistory(newStatement:ChatStatement) -> ChatStatement {
+        var statementWithHistory = ChatStatement(text: newStatement.text)
+        self.recentStatements.forEach { oldStatement in
+            statementWithHistory.add(oldStatement)
+        }
+        return statementWithHistory
+    }
+    
+    
 }
 

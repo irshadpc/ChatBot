@@ -18,6 +18,7 @@ protocol InputService {
 }
 
 extension InputService {
+
     func processInput(input:InputType) -> ChatStatement {
         switch input {
         case .Text(let inputText):
