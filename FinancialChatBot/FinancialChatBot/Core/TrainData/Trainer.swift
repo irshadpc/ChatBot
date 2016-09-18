@@ -14,9 +14,7 @@ extension Trainer {
                                   classifier:NaiveBayesClassifier,
                                   category:String) {
         let data = dataSource.trainData()
-        data.forEach { item in
-            classifier.trainWithText(item, category: category)
-        }
+        classifier.trainWithTokens(data, category: category)
     }
 }
 

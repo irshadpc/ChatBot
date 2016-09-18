@@ -10,6 +10,7 @@ protocol LogicService  {
 
 
 extension LogicService {
+
     
     // Default implementation without no logic
     func canProcessInput(input:ChatStatement) -> Bool {

@@ -9,12 +9,19 @@ struct ReportLogicService : LogicService {
         return CategoryClassifier.sharedInstance
     }
     
+    var showReport : () -> () = {}
+    
     let category = FinancialAction.Report.rawValue
     
     func processInput(input:ChatStatement) -> (ChatStatement, Float) {
         
-        if classifier.classify(input.fullText()) == category  {
-            let response = ChatStatement(text: "Сейчас сформирую отчет")
+        let inputText = input.fullText()
+        if classifier.classify(inputText) == category &&
+            inputText.rangeOfString("отчет") != nil {
+            
+            self.showReport()
+            var response = ChatStatement(text: "Сейчас сформирую отчет")
+            response.finishStatement = true
             return (response,1)
         }
 

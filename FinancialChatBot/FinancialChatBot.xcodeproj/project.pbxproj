@@ -300,8 +300,7 @@
 			children = (
 				8452206D1D8E8ED300499F83 /* Classes */,
 			);
-			name = Chart;
-			path = XYPieChart;
+			path = Chart;
 			sourceTree = "<group>";
 		};
 		8452206D1D8E8ED300499F83 /* Classes */ = {
@@ -428,8 +427,7 @@
 				580DBDC11D88607900D03A76 /* Message.swift */,
 				580DBDFB1D89A8C000D03A76 /* MessageViewDataSource.swift */,
 			);
-			name = Message;
-			path = MessageComponent;
+			path = Message;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

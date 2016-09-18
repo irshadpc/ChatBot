@@ -33,6 +33,8 @@ class ChatEngine : ChatContext {
         let statementWithResponses = self.updateStatementWithHistory(statement)
         
         let (logicStatement,_) = self.logic.processInput(statementWithResponses)
+        if logicStatement.finishStatement { self.removeHistory() }
+        
         let response = self.ouput.processResponse(logicStatement)
         
         updateHistory(statement)
@@ -41,7 +43,16 @@ class ChatEngine : ChatContext {
     
     func updateHistory(newStatement : ChatStatement) {
         self.recentStatements.append(newStatement)
+        // Fix size for context
+        if self.recentStatements.count > 2  {
+            self.removeHistory()
+        }
     }
+    
+    func removeHistory() {
+        self.recentStatements = []
+    }
+        
     
     func updateStatementWithHistory(newStatement:ChatStatement) -> ChatStatement {
         var statementWithHistory = ChatStatement(text: newStatement.text)
@@ -50,7 +61,5 @@ class ChatEngine : ChatContext {
         }
         return statementWithHistory
     }
-    
-    
 }
 

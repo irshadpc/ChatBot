@@ -12,20 +12,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupChatEngine()
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        self.setupMessageUI()
+        setupMessageUI()
     }
     
     override func prefersStatusBarHidden() -> Bool {
         return true
-    }
-
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        messageController.sendMessage("Покажи мне отчет", sender: userSenderName)
     }
     
     func setupMessageUI() {
@@ -63,10 +54,16 @@ private extension ViewController {
     }
     
     func logic() -> LogicService {
+        
+        var reportLogic = ReportLogicService()
+        reportLogic.showReport = { [unowned self] in
+            let report = DataStorage.sharedInstance.financialReport()
+            self.showReport(report)
+        }
 
         let spentRemainingLogic = SpentRemainingLogicService()
-        let reportLogic = ReportLogicService()
-        let logic = MultiLogicService(services: [spentRemainingLogic,reportLogic])
+        let emptyLogic = EmptyLogicService()
+        let logic = MultiLogicService(services: [spentRemainingLogic,reportLogic, emptyLogic])
         return logic
     }
     

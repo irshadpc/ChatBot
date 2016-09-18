@@ -58,13 +58,10 @@ extension MessagesViewController  {
         let message = messages[indexPath.item]
         if let avatar = avatars[message.senderDisplayName] {
             return avatar
-        } else {
-           // setupAvatarImage(message.sender(), imageUrl: message.imageUrl(), incoming: true)
-            return nil//UIImageView(image:avatars[message.sender()])
         }
+        
+        return nil
     }
-
-    
     
     
 }

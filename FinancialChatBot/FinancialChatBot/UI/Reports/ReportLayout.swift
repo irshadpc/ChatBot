@@ -25,4 +25,12 @@ struct ReportLayout {
         chartFooter.frame = CGRectMake(kJBBarChartViewControllerChartPadding, ceil(view.bounds.size.height * 0.5) - ceil(kJBBarChartViewControllerChartFooterHeight * 0.5), view.bounds.size.width - (kJBBarChartViewControllerChartPadding * 2), kJBBarChartViewControllerChartFooterHeight)
         view.footerView = chartFooter
     }
+    
+    func layout(closeButton:UIButton, to view:UIView) {
+        view.addSubview(closeButton)
+        let padding = 20
+        closeButton.alignBottomEdgeWithView(view, predicate: String(-30))
+        closeButton.alignLeading(String(padding), trailing: String(-padding), toView: view)
+        closeButton.constrainHeight(String(45))
+    }
 }

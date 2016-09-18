@@ -32,7 +32,7 @@ class MessagesViewController :  JSQMessagesViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        collectionView.collectionViewLayout.springinessEnabled = true
+        collectionView.collectionViewLayout.springinessEnabled = false
     }
 
     func sendMessage(text: String!, sender: String!) {

@@ -10,6 +10,13 @@ class ReportViewController : UIViewController {
         return chart
     }()
     
+    private lazy var closeButton : UIButton =  {
+        let button = UIButton()
+        button.addTarget(self, action: #selector(ReportViewController.close), forControlEvents: .TouchUpInside)
+        button.setTitle("Close", forState: .Normal)
+        return button
+    }()
+    
     private var reportModel : FinancialReport
     
     init(reportData : FinancialReport) {
@@ -42,6 +49,7 @@ private extension ReportViewController {
         let stylesheet = ReportStylesheet()
         let barChartAttributes = stylesheet.barChartAttributes
         barChartAttributes.apply(to: barChart)
+        stylesheet.buttonAttributes.apply(to: closeButton)
     
         barChart.minimumValue = 0.0;
         barChart.inverted = false;
@@ -57,6 +65,12 @@ private extension ReportViewController {
         reportLayout.layout(barChart, to: self.view)
         reportLayout.layout(header, to: barChart)
         reportLayout.layout(footer, to: barChart)
+        reportLayout.layout(closeButton, to: self.view)
+    }
+    
+    @objc
+    func close() {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }
 

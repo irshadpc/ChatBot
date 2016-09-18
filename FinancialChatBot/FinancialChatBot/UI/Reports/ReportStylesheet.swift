@@ -18,24 +18,33 @@ extension UIColor {
     }
 }
 
-struct ChartAttributes {
+struct StyleAttributes {
     let color : UIColor
-    let strokeColor : UIColor
+    let backgroundColor : UIColor
 }
 
-extension ChartAttributes {
+extension StyleAttributes {
     
     func apply(to chart:JBBarChartView) {
         chart.backgroundColor = self.color;
+    }
+    
+    func apply(to button:UIButton) {
+        button.titleLabel?.textColor = self.color
+        button.backgroundColor = self.backgroundColor
     }
 }
 
 struct ReportStylesheet {
     
-    var barChartAttributes : ChartAttributes {
-        return ChartAttributes(
+    var barChartAttributes : StyleAttributes {
+        return StyleAttributes(
             color: kColorBarChartBackground,
-            strokeColor: UIColor.greenColor())
+            backgroundColor: kColorBarChartBackground)
+    }
+    
+    var buttonAttributes: StyleAttributes {
+        return StyleAttributes(color: UIColor.whiteColor(), backgroundColor: kColorBarChartBackground)
     }
     
 }

@@ -3,11 +3,11 @@
 import Foundation
 
 
-struct MultiLogicService {
+struct MultiLogicService :LogicService{
     var services : [LogicService]
 }
 
-extension MultiLogicService : LogicService {
+extension MultiLogicService  {
     
     func processInput(input:ChatStatement) -> (ChatStatement, Float) {
         var maxReliability : Float = -1
