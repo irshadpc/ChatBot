@@ -18,12 +18,10 @@
 		58040B661D86F1CE00E90B6D /* OutputService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58040B651D86F1CE00E90B6D /* OutputService.swift */; };
 		58040B681D86F1DC00E90B6D /* LogicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58040B671D86F1DC00E90B6D /* LogicService.swift */; };
 		58040B6E1D86F3B500E90B6D /* ChatStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58040B6D1D86F3B500E90B6D /* ChatStatement.swift */; };
-		58040B701D86F41E00E90B6D /* ChatResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58040B6F1D86F41E00E90B6D /* ChatResponse.swift */; };
 		58040B731D86FED600E90B6D /* MultiLogicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58040B721D86FED600E90B6D /* MultiLogicService.swift */; };
 		58040B751D87030100E90B6D /* DefaultInputService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58040B741D87030100E90B6D /* DefaultInputService.swift */; };
 		58040B771D87034200E90B6D /* DefaultOutputService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58040B761D87034200E90B6D /* DefaultOutputService.swift */; };
 		58040B791D87046000E90B6D /* EmptyLogicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58040B781D87046000E90B6D /* EmptyLogicService.swift */; };
-		58040B7B1D8704D900E90B6D /* HashStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58040B7A1D8704D900E90B6D /* HashStorageService.swift */; };
 		58040B7D1D8710D700E90B6D /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58040B7C1D8710D700E90B6D /* MessagesViewController.swift */; };
 		58055C911D8C4496000893C8 /* ReportStylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58055C901D8C4496000893C8 /* ReportStylesheet.swift */; };
 		58055C931D8C44FB000893C8 /* ReportLogicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58055C921D8C44FB000893C8 /* ReportLogicService.swift */; };
@@ -73,12 +71,10 @@
 		58040B651D86F1CE00E90B6D /* OutputService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutputService.swift; sourceTree = "<group>"; };
 		58040B671D86F1DC00E90B6D /* LogicService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogicService.swift; sourceTree = "<group>"; };
 		58040B6D1D86F3B500E90B6D /* ChatStatement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatStatement.swift; sourceTree = "<group>"; };
-		58040B6F1D86F41E00E90B6D /* ChatResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatResponse.swift; sourceTree = "<group>"; };
 		58040B721D86FED600E90B6D /* MultiLogicService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiLogicService.swift; sourceTree = "<group>"; };
 		58040B741D87030100E90B6D /* DefaultInputService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultInputService.swift; sourceTree = "<group>"; };
 		58040B761D87034200E90B6D /* DefaultOutputService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultOutputService.swift; sourceTree = "<group>"; };
 		58040B781D87046000E90B6D /* EmptyLogicService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyLogicService.swift; sourceTree = "<group>"; };
-		58040B7A1D8704D900E90B6D /* HashStorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashStorageService.swift; sourceTree = "<group>"; };
 		58040B7C1D8710D700E90B6D /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		58040B7E1D87116800E90B6D /* FinancialChatBot-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FinancialChatBot-Bridging-Header.h"; sourceTree = "<group>"; };
 		58055C901D8C4496000893C8 /* ReportStylesheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportStylesheet.swift; sourceTree = "<group>"; };
@@ -201,7 +197,6 @@
 				58040B691D86F1E800E90B6D /* Logic */,
 				58040B5F1D86F16300E90B6D /* ChatEngine.swift */,
 				58040B6D1D86F3B500E90B6D /* ChatStatement.swift */,
-				58040B6F1D86F41E00E90B6D /* ChatResponse.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -242,7 +237,6 @@
 			isa = PBXGroup;
 			children = (
 				58040B611D86F1AC00E90B6D /* StorageService.swift */,
-				58040B7A1D8704D900E90B6D /* HashStorageService.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -575,10 +569,8 @@
 				8438BD3F1D891EA5003FD598 /* ReportViewController.swift in Sources */,
 				580DBDFC1D89A8C000D03A76 /* MessageViewDataSource.swift in Sources */,
 				58040B771D87034200E90B6D /* DefaultOutputService.swift in Sources */,
-				58040B701D86F41E00E90B6D /* ChatResponse.swift in Sources */,
 				845220991D8E8ED300499F83 /* JBLineChartLinesView.m in Sources */,
 				58040B641D86F1BA00E90B6D /* InputService.swift in Sources */,
-				58040B7B1D8704D900E90B6D /* HashStorageService.swift in Sources */,
 				58040B751D87030100E90B6D /* DefaultInputService.swift in Sources */,
 				58040B791D87046000E90B6D /* EmptyLogicService.swift in Sources */,
 				8438BD441D8D1D5F003FD598 /* Category.swift in Sources */,

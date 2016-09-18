@@ -44,7 +44,7 @@ private extension ViewController {
     func setupChatEngine() {
         let input = DefaultInputService()
         let output = DefaultOutputService()
-        let storage = HashStorageService()
+        let storage = PlainStorageService()
     
         self.chat = ChatEngine(storage: storage, input: input, output: output, logic: self.logic())
         

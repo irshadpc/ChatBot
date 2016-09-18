@@ -17,7 +17,7 @@ struct ChatStatement {
         inResponseToQueue.append(response)
     }
     
-    mutating func remove(response:ChatResponse) {
+    mutating func remove(response:ChatStatement) {
         let newQueue = inResponseToQueue.filter { $0.text == response.text}
         inResponseToQueue = newQueue
     }

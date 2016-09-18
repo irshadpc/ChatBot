@@ -2,6 +2,16 @@
 
 import Foundation
 
+
+/*
+ Storage adapters - Provide an interface for bot to connect to various storage systems such as CoreData
+ or local file storage. They should store all message history
+ Input adapters - Provide methods that allow bot to get input from a defined input type.
+ Output adapters - Provide methods that allow bot to return a response (formatter, send to server, etc)
+ Logic adapters - Define the logic that bot uses to respond to input it receives.
+ */
+
+
 protocol ChatContext {
     var storage: StorageService { get }
     var input: InputService { get }
@@ -43,7 +53,7 @@ class ChatEngine : ChatContext {
     
     func updateHistory(newStatement : ChatStatement) {
         self.recentStatements.append(newStatement)
-        // Fix size for context
+        // Fix size for word context
         if self.recentStatements.count > 2  {
             self.removeHistory()
         }
