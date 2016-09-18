@@ -33,6 +33,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         messageController.sendMessage("Покажи мне отчет", sender: "Andrew1")
+        showReport()
     }
     
     func setupMessageUI() {
@@ -47,6 +48,18 @@ class ViewController: UIViewController {
         messageController.userSendNewMessage = { [unowned self] (message:Message) in
             self.sendNewMessageToEngine(message.messageText)
         }
+    }
+    
+    func showReport() {
+        let data = DataStorage.sharedInstance
+        data.add(15, to: "test")
+        data.add(25, to: "test2")
+        data.add(30, to: "test3")
+        data.add(10, to: "test4")
+        
+        let report = data.financialReport()
+        let reportController = ReportViewController(reportData: report)
+        self.presentViewController(reportController, animated: true, completion:nil)
     }
 }
 

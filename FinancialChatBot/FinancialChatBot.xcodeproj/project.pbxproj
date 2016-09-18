@@ -36,7 +36,23 @@
 		8438BD411D8D1C8D003FD598 /* NormalizedStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438BD401D8D1C8D003FD598 /* NormalizedStatement.swift */; };
 		8438BD441D8D1D5F003FD598 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438BD431D8D1D5F003FD598 /* Category.swift */; };
 		8438BD461D8D1D90003FD598 /* FinancialReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438BD451D8D1D90003FD598 /* FinancialReport.swift */; };
+		8452208E1D8E8ED300499F83 /* NSMutableArray+JBStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 845220701D8E8ED300499F83 /* NSMutableArray+JBStack.m */; };
+		8452208F1D8E8ED300499F83 /* JBBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 845220731D8E8ED300499F83 /* JBBarChartView.m */; };
+		845220901D8E8ED300499F83 /* JBGradientBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 845220761D8E8ED300499F83 /* JBGradientBarView.m */; };
+		845220911D8E8ED300499F83 /* JBChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 845220791D8E8ED300499F83 /* JBChartView.m */; };
+		845220921D8E8ED300499F83 /* JBLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8452207C1D8E8ED300499F83 /* JBLineChartView.m */; };
+		845220931D8E8ED300499F83 /* JBGradientLineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8452207F1D8E8ED300499F83 /* JBGradientLineLayer.m */; };
+		845220941D8E8ED300499F83 /* JBShapeLineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 845220811D8E8ED300499F83 /* JBShapeLineLayer.m */; };
+		845220951D8E8ED300499F83 /* JBLineChartLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 845220841D8E8ED300499F83 /* JBLineChartLine.m */; };
+		845220961D8E8ED300499F83 /* JBLineChartPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 845220861D8E8ED300499F83 /* JBLineChartPoint.m */; };
+		845220971D8E8ED300499F83 /* JBLineChartDotsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 845220891D8E8ED300499F83 /* JBLineChartDotsView.m */; };
+		845220981D8E8ED300499F83 /* JBLineChartDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8452208B1D8E8ED300499F83 /* JBLineChartDotView.m */; };
+		845220991D8E8ED300499F83 /* JBLineChartLinesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8452208D1D8E8ED300499F83 /* JBLineChartLinesView.m */; };
+		845220A21D8EA7AF00499F83 /* JBBarChartFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8452209C1D8EA7AF00499F83 /* JBBarChartFooterView.m */; };
+		845220A31D8EA7AF00499F83 /* JBLineChartFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8452209E1D8EA7AF00499F83 /* JBLineChartFooterView.m */; };
+		845220A41D8EA7AF00499F83 /* JBChartHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 845220A11D8EA7AF00499F83 /* JBChartHeaderView.m */; };
 		849BA1C41D8E05DC00B0F9C4 /* CategoryClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BA1C31D8E05DC00B0F9C4 /* CategoryClassifier.swift */; };
+		849BA1C61D8E712000B0F9C4 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BA1C51D8E712000B0F9C4 /* DataStorage.swift */; };
 		84F452FD1D87699800BC075B /* SpentRemainingLogicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F452FC1D87699800BC075B /* SpentRemainingLogicService.swift */; };
 		FF280CC957E65AD17B192403 /* Pods_FinancialChatBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98CEB78C0CFE04763CB06D8 /* Pods_FinancialChatBot.framework */; };
 /* End PBXBuildFile section */
@@ -76,7 +92,38 @@
 		8438BD401D8D1C8D003FD598 /* NormalizedStatement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalizedStatement.swift; sourceTree = "<group>"; };
 		8438BD431D8D1D5F003FD598 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		8438BD451D8D1D90003FD598 /* FinancialReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancialReport.swift; sourceTree = "<group>"; };
+		8452206F1D8E8ED300499F83 /* NSMutableArray+JBStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+JBStack.h"; sourceTree = "<group>"; };
+		845220701D8E8ED300499F83 /* NSMutableArray+JBStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+JBStack.m"; sourceTree = "<group>"; };
+		845220721D8E8ED300499F83 /* JBBarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBBarChartView.h; sourceTree = "<group>"; };
+		845220731D8E8ED300499F83 /* JBBarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBBarChartView.m; sourceTree = "<group>"; };
+		845220751D8E8ED300499F83 /* JBGradientBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBGradientBarView.h; sourceTree = "<group>"; };
+		845220761D8E8ED300499F83 /* JBGradientBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBGradientBarView.m; sourceTree = "<group>"; };
+		845220781D8E8ED300499F83 /* JBChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBChartView.h; sourceTree = "<group>"; };
+		845220791D8E8ED300499F83 /* JBChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBChartView.m; sourceTree = "<group>"; };
+		8452207B1D8E8ED300499F83 /* JBLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartView.h; sourceTree = "<group>"; };
+		8452207C1D8E8ED300499F83 /* JBLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartView.m; sourceTree = "<group>"; };
+		8452207E1D8E8ED300499F83 /* JBGradientLineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBGradientLineLayer.h; sourceTree = "<group>"; };
+		8452207F1D8E8ED300499F83 /* JBGradientLineLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBGradientLineLayer.m; sourceTree = "<group>"; };
+		845220801D8E8ED300499F83 /* JBShapeLineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBShapeLineLayer.h; sourceTree = "<group>"; };
+		845220811D8E8ED300499F83 /* JBShapeLineLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBShapeLineLayer.m; sourceTree = "<group>"; };
+		845220831D8E8ED300499F83 /* JBLineChartLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartLine.h; sourceTree = "<group>"; };
+		845220841D8E8ED300499F83 /* JBLineChartLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartLine.m; sourceTree = "<group>"; };
+		845220851D8E8ED300499F83 /* JBLineChartPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartPoint.h; sourceTree = "<group>"; };
+		845220861D8E8ED300499F83 /* JBLineChartPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartPoint.m; sourceTree = "<group>"; };
+		845220881D8E8ED300499F83 /* JBLineChartDotsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartDotsView.h; sourceTree = "<group>"; };
+		845220891D8E8ED300499F83 /* JBLineChartDotsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartDotsView.m; sourceTree = "<group>"; };
+		8452208A1D8E8ED300499F83 /* JBLineChartDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartDotView.h; sourceTree = "<group>"; };
+		8452208B1D8E8ED300499F83 /* JBLineChartDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartDotView.m; sourceTree = "<group>"; };
+		8452208C1D8E8ED300499F83 /* JBLineChartLinesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartLinesView.h; sourceTree = "<group>"; };
+		8452208D1D8E8ED300499F83 /* JBLineChartLinesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartLinesView.m; sourceTree = "<group>"; };
+		8452209B1D8EA7AF00499F83 /* JBBarChartFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBBarChartFooterView.h; sourceTree = "<group>"; };
+		8452209C1D8EA7AF00499F83 /* JBBarChartFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBBarChartFooterView.m; sourceTree = "<group>"; };
+		8452209D1D8EA7AF00499F83 /* JBLineChartFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartFooterView.h; sourceTree = "<group>"; };
+		8452209E1D8EA7AF00499F83 /* JBLineChartFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartFooterView.m; sourceTree = "<group>"; };
+		845220A01D8EA7AF00499F83 /* JBChartHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBChartHeaderView.h; sourceTree = "<group>"; };
+		845220A11D8EA7AF00499F83 /* JBChartHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBChartHeaderView.m; sourceTree = "<group>"; };
 		849BA1C31D8E05DC00B0F9C4 /* CategoryClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryClassifier.swift; sourceTree = "<group>"; };
+		849BA1C51D8E712000B0F9C4 /* DataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 		84F452FC1D87699800BC075B /* SpentRemainingLogicService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpentRemainingLogicService.swift; sourceTree = "<group>"; };
 		B98CEB78C0CFE04763CB06D8 /* Pods_FinancialChatBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinancialChatBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -203,6 +250,7 @@
 		58040B711D86FCFA00E90B6D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				8452203C1D8E858E00499F83 /* Chart */,
 				8438BD391D891E44003FD598 /* Reports */,
 				84F452F51D87662900BC075B /* Message */,
 				58040B4D1D86DF8900E90B6D /* ViewController.swift */,
@@ -242,8 +290,135 @@
 			children = (
 				8438BD431D8D1D5F003FD598 /* Category.swift */,
 				8438BD451D8D1D90003FD598 /* FinancialReport.swift */,
+				849BA1C51D8E712000B0F9C4 /* DataStorage.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8452203C1D8E858E00499F83 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				8452206D1D8E8ED300499F83 /* Classes */,
+			);
+			name = Chart;
+			path = XYPieChart;
+			sourceTree = "<group>";
+		};
+		8452206D1D8E8ED300499F83 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8452209A1D8EA7AF00499F83 /* Footers */,
+				8452209F1D8EA7AF00499F83 /* Headers */,
+				8452206E1D8E8ED300499F83 /* Additions */,
+				845220711D8E8ED300499F83 /* Bar */,
+				845220771D8E8ED300499F83 /* Base */,
+				8452207A1D8E8ED300499F83 /* Line */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8452206E1D8E8ED300499F83 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				8452206F1D8E8ED300499F83 /* NSMutableArray+JBStack.h */,
+				845220701D8E8ED300499F83 /* NSMutableArray+JBStack.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		845220711D8E8ED300499F83 /* Bar */ = {
+			isa = PBXGroup;
+			children = (
+				845220721D8E8ED300499F83 /* JBBarChartView.h */,
+				845220731D8E8ED300499F83 /* JBBarChartView.m */,
+				845220741D8E8ED300499F83 /* Views */,
+			);
+			path = Bar;
+			sourceTree = "<group>";
+		};
+		845220741D8E8ED300499F83 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				845220751D8E8ED300499F83 /* JBGradientBarView.h */,
+				845220761D8E8ED300499F83 /* JBGradientBarView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		845220771D8E8ED300499F83 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				845220781D8E8ED300499F83 /* JBChartView.h */,
+				845220791D8E8ED300499F83 /* JBChartView.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8452207A1D8E8ED300499F83 /* Line */ = {
+			isa = PBXGroup;
+			children = (
+				8452207B1D8E8ED300499F83 /* JBLineChartView.h */,
+				8452207C1D8E8ED300499F83 /* JBLineChartView.m */,
+				8452207D1D8E8ED300499F83 /* Layers */,
+				845220821D8E8ED300499F83 /* Models */,
+				845220871D8E8ED300499F83 /* Views */,
+			);
+			path = Line;
+			sourceTree = "<group>";
+		};
+		8452207D1D8E8ED300499F83 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				8452207E1D8E8ED300499F83 /* JBGradientLineLayer.h */,
+				8452207F1D8E8ED300499F83 /* JBGradientLineLayer.m */,
+				845220801D8E8ED300499F83 /* JBShapeLineLayer.h */,
+				845220811D8E8ED300499F83 /* JBShapeLineLayer.m */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		845220821D8E8ED300499F83 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				845220831D8E8ED300499F83 /* JBLineChartLine.h */,
+				845220841D8E8ED300499F83 /* JBLineChartLine.m */,
+				845220851D8E8ED300499F83 /* JBLineChartPoint.h */,
+				845220861D8E8ED300499F83 /* JBLineChartPoint.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		845220871D8E8ED300499F83 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				845220881D8E8ED300499F83 /* JBLineChartDotsView.h */,
+				845220891D8E8ED300499F83 /* JBLineChartDotsView.m */,
+				8452208A1D8E8ED300499F83 /* JBLineChartDotView.h */,
+				8452208B1D8E8ED300499F83 /* JBLineChartDotView.m */,
+				8452208C1D8E8ED300499F83 /* JBLineChartLinesView.h */,
+				8452208D1D8E8ED300499F83 /* JBLineChartLinesView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8452209A1D8EA7AF00499F83 /* Footers */ = {
+			isa = PBXGroup;
+			children = (
+				8452209B1D8EA7AF00499F83 /* JBBarChartFooterView.h */,
+				8452209C1D8EA7AF00499F83 /* JBBarChartFooterView.m */,
+				8452209D1D8EA7AF00499F83 /* JBLineChartFooterView.h */,
+				8452209E1D8EA7AF00499F83 /* JBLineChartFooterView.m */,
+			);
+			path = Footers;
+			sourceTree = "<group>";
+		};
+		8452209F1D8EA7AF00499F83 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				845220A01D8EA7AF00499F83 /* JBChartHeaderView.h */,
+				845220A11D8EA7AF00499F83 /* JBChartHeaderView.m */,
+			);
+			path = Headers;
 			sourceTree = "<group>";
 		};
 		84F452F51D87662900BC075B /* Message */ = {
@@ -381,32 +556,48 @@
 			files = (
 				58040B7D1D8710D700E90B6D /* MessagesViewController.swift in Sources */,
 				8438BD3B1D891E78003FD598 /* ReportLayout.swift in Sources */,
+				8452208E1D8E8ED300499F83 /* NSMutableArray+JBStack.m in Sources */,
 				580DBE011D89BBD800D03A76 /* Trainer.swift in Sources */,
+				845220931D8E8ED300499F83 /* JBGradientLineLayer.m in Sources */,
+				845220911D8E8ED300499F83 /* JBChartView.m in Sources */,
 				58040B661D86F1CE00E90B6D /* OutputService.swift in Sources */,
 				58040B6E1D86F3B500E90B6D /* ChatStatement.swift in Sources */,
 				580DBDC21D88607900D03A76 /* Message.swift in Sources */,
 				58055C931D8C44FB000893C8 /* ReportLogicService.swift in Sources */,
 				58055C911D8C4496000893C8 /* ReportStylesheet.swift in Sources */,
 				58040B601D86F16300E90B6D /* ChatEngine.swift in Sources */,
+				845220A41D8EA7AF00499F83 /* JBChartHeaderView.m in Sources */,
+				845220A21D8EA7AF00499F83 /* JBBarChartFooterView.m in Sources */,
+				845220921D8E8ED300499F83 /* JBLineChartView.m in Sources */,
+				845220A31D8EA7AF00499F83 /* JBLineChartFooterView.m in Sources */,
 				8438BD461D8D1D90003FD598 /* FinancialReport.swift in Sources */,
 				58040B681D86F1DC00E90B6D /* LogicService.swift in Sources */,
 				8438BD411D8D1C8D003FD598 /* NormalizedStatement.swift in Sources */,
+				845220971D8E8ED300499F83 /* JBLineChartDotsView.m in Sources */,
 				8438BD3F1D891EA5003FD598 /* ReportViewController.swift in Sources */,
 				580DBDFC1D89A8C000D03A76 /* MessageViewDataSource.swift in Sources */,
 				58040B771D87034200E90B6D /* DefaultOutputService.swift in Sources */,
 				58040B701D86F41E00E90B6D /* ChatResponse.swift in Sources */,
+				845220991D8E8ED300499F83 /* JBLineChartLinesView.m in Sources */,
 				58040B641D86F1BA00E90B6D /* InputService.swift in Sources */,
 				58040B7B1D8704D900E90B6D /* HashStorageService.swift in Sources */,
 				58040B751D87030100E90B6D /* DefaultInputService.swift in Sources */,
 				58040B791D87046000E90B6D /* EmptyLogicService.swift in Sources */,
 				8438BD441D8D1D5F003FD598 /* Category.swift in Sources */,
+				845220951D8E8ED300499F83 /* JBLineChartLine.m in Sources */,
 				58040B731D86FED600E90B6D /* MultiLogicService.swift in Sources */,
 				84F452FD1D87699800BC075B /* SpentRemainingLogicService.swift in Sources */,
+				845220901D8E8ED300499F83 /* JBGradientBarView.m in Sources */,
+				849BA1C61D8E712000B0F9C4 /* DataStorage.swift in Sources */,
 				58040B4E1D86DF8900E90B6D /* ViewController.swift in Sources */,
 				580DBDFF1D89BB9200D03A76 /* TrainDataSource.swift in Sources */,
 				58040B4C1D86DF8900E90B6D /* AppDelegate.swift in Sources */,
+				8452208F1D8E8ED300499F83 /* JBBarChartView.m in Sources */,
 				849BA1C41D8E05DC00B0F9C4 /* CategoryClassifier.swift in Sources */,
+				845220961D8E8ED300499F83 /* JBLineChartPoint.m in Sources */,
 				58040B621D86F1AC00E90B6D /* StorageService.swift in Sources */,
+				845220941D8E8ED300499F83 /* JBShapeLineLayer.m in Sources */,
+				845220981D8E8ED300499F83 /* JBLineChartDotView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,10 +15,6 @@ public enum FinancialAction : String {
     case Report
 }
 
-enum FinancialCategory : String {
-    case Spent
-    case Remaining
-}
 
 struct SpentRemainingLogicService : LogicService {
     

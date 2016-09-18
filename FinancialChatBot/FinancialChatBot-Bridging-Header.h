@@ -12,6 +12,10 @@
 #import <JSQMessagesViewController/JSQMessages.h>
 #import <PNChart/PNChart.h>
 #import <FLKAutoLayout/FLKAutoLayout.h>
+#import "JBChartView.h"
+#import "JBBarChartView.h"
+#import "JBChartHeaderView.h"
+#import "JBBarChartFooterView.h"
 
 #endif /* FinancialChatBot_Bridging_Header_h_h */
 
