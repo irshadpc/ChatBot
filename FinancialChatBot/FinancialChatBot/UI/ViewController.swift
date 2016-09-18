@@ -25,12 +25,12 @@ class ViewController: UIViewController {
 
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        messageController.sendMessage("Покажи мне отчет", sender: "Andrew1")
+        messageController.sendMessage("Покажи мне отчет", sender: userSenderName)
     }
     
     func setupMessageUI() {
-        messageController.senderId = "Andrew"
-        messageController.senderDisplayName = "Andrew"
+        messageController.senderId = chatBotSenderName
+        messageController.senderDisplayName = chatBotSenderName
         messageController.willMoveToParentViewController(self)
         self.addChildViewController(messageController)
         view.addSubview(messageController.view)
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         messageController.view.alignToView(self.view)
         
         messageController.userSendNewMessage = { [unowned self] (message:Message) in
-            self.sendNewMessageToEngine(message.messageText)
+            self.sendNewMessageToEngine(message.text)
         }
     }
     
@@ -77,7 +77,7 @@ private extension ViewController {
     }
     
     func sendNewMessageToUser(text:String) {
-        messageController.engineSendMessage(text, sender: "Bot")
+        messageController.engineSendMessage(text, sender: chatBotSenderName)
     }
 
 }

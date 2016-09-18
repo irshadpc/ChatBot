@@ -4,25 +4,37 @@
 import Foundation
 import JSQMessagesViewController
 
-class  Message : NSObject {
-    var messageText: String
-    var messageSender: String
-    var messageDate: NSDate
+class  Message : JSQMessage {
+    /*var messageText: String
+    var sender: String
+    var messageDate: NSDate*/
     
-    convenience init(text: String?, sender: String?) {
-        self.init(text: text, sender: sender, imageUrl: nil)
+    init(text: String?, sender: String?) {
+        //super.init(senderId: sender, displayName: sender, text: text)
+        super.init(senderId: sender, senderDisplayName: sender, date: NSDate(), text: text)
     }
     
-    init(text: String?, sender: String?, imageUrl: String?) {
+   /* init(text: String?, sender: String?, imageUrl: String?) {
         self.messageText = text!
         self.messageSender = sender!
         self.messageDate = NSDate()
+        super.ini
+    }*/
+    
+    
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
 
-extension Message : JSQMessageData {
+extension Message  {
     
-    func text() -> String! {
+//    func sender() -> String! {
+//        return senderDisplayName;
+//    }
+    
+  /*  func text() -> String! {
         return messageText
     }
     
@@ -39,19 +51,15 @@ extension Message : JSQMessageData {
     }
     
     func senderId() -> String! {
-        return "1"
+        return self.messageSender
     }
     
     func senderDisplayName() -> String! {
         return self.messageSender
     }
     
-    func isMediaMessage() -> Bool {
-        return false
-    }
-    
     func messageHash() -> UInt {
-        return 123
-    }
+        return UInt(self.messageText.hash)
+    }*/
 
 }

@@ -13,22 +13,58 @@ extension MessagesViewController  {
         return messages.count
     }
     
+    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = super.collectionView(collectionView, cellForItemAtIndexPath: indexPath) as! JSQMessagesCollectionViewCell
+        
+        let message = messages[indexPath.item]
+        if message.senderDisplayName == senderDisplayName {
+            cell.textView.textColor = UIColor.blackColor()
+        } else {
+            cell.textView.textColor = UIColor.whiteColor()
+        }
+        
+        let attributes : [String:AnyObject] = [NSForegroundColorAttributeName:cell.textView.textColor!, NSUnderlineStyleAttributeName: 1]
+        cell.textView.linkTextAttributes = attributes
+        return cell
+    }
+
+    
     func collectionView(collectionView: JSQMessagesCollectionView!, bubbleImageViewForItemAtIndexPath indexPath: NSIndexPath!) -> UIImageView! {
         let message = messages[indexPath.item]
         
-        if message.sender() == senderDisplayName {
+        if message.senderDisplayName == senderDisplayName {
             return UIImageView(image: outgoingBubbleImageView.messageBubbleImage, highlightedImage: outgoingBubbleImageView.messageBubbleHighlightedImage)
         }
         
         return UIImageView(image: incomingBubbleImageView.messageBubbleImage, highlightedImage: incomingBubbleImageView.messageBubbleHighlightedImage)
     }
     
+    func bubbleImageSource(path:NSIndexPath) -> JSQMessageBubbleImageDataSource  {
+        let message = messages[path.item]
+        
+        if message.senderDisplayName == senderDisplayName {
+            return outgoingBubbleImageView
+        }
+        
+        return incomingBubbleImageView
+    }
+    
+    
     override func collectionView(collectionView: JSQMessagesCollectionView!, messageBubbleImageDataForItemAtIndexPath indexPath: NSIndexPath!) -> JSQMessageBubbleImageDataSource! {
-        return outgoingBubbleImageView
+        return self.bubbleImageSource(indexPath)
     }
     
     override func collectionView(collectionView: JSQMessagesCollectionView!, avatarImageDataForItemAtIndexPath indexPath: NSIndexPath!) -> JSQMessageAvatarImageDataSource! {
-        return nil
+        let message = messages[indexPath.item]
+        if let avatar = avatars[message.senderDisplayName] {
+            return avatar
+        } else {
+           // setupAvatarImage(message.sender(), imageUrl: message.imageUrl(), incoming: true)
+            return nil//UIImageView(image:avatars[message.sender()])
+        }
     }
+
+    
+    
     
 }
