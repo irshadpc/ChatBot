@@ -1,10 +1,5 @@
-//
-//  MessagesViewController.swift
-//  FinancialChatBot
-//
-//  Created by Andrew Denisov on 9/12/16.
-//  Copyright © 2016 Andrew Denisov. All rights reserved.
-//
+
+
 
 import UIKit
 import Foundation
@@ -57,7 +52,6 @@ extension MessageControllerPublicMethods {
     func engineSendMessage(text:String, sender:String) {
         let message = Message(text: text, sender: sender, imageUrl: nil)
         messages.append(message)
-        print(text)
         self.collectionView.reloadData()
     }
 }

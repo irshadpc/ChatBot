@@ -1,10 +1,4 @@
-//
-//  Trainer.swift
-//  FinancialChatBot
-//
-//  Created by Andrew Denisov on 9/14/16.
-//  Copyright © 2016 Andrew Denisov. All rights reserved.
-//
+
 
 import Foundation
 import Parsimmon

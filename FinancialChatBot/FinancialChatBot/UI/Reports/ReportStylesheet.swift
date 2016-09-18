@@ -1,13 +1,12 @@
-//
-//  ReportStylesheet.swift
-//  FinancialChatBot
-//
-//  Created by Andrew Denisov on 9/16/16.
-//  Copyright © 2016 Andrew Denisov. All rights reserved.
-//
+
+
 
 import Foundation
-import PNChart
+
+let kColorBarChartControllerBackground = UIColor(hex: 0x313131)
+let kColorBarChartBackground = UIColor(hex: 0x3c3c3c)
+let kColorBarChartBarBlue = UIColor(hex: 0x08bcef)
+let kColorBarChartBarGreen = UIColor(hex: 0x34b234)
 
 extension UIColor {
     convenience init(red: Int, green: Int, blue: Int) {
@@ -18,11 +17,6 @@ extension UIColor {
         self.init(red:(hex >> 16) & 0xff, green:(hex >> 8) & 0xff, blue:hex & 0xff)
     }
 }
-
-let kColorBarChartControllerBackground = UIColor(hex: 0x313131)
-let kColorBarChartBackground = UIColor(hex: 0x3c3c3c)
-let kColorBarChartBarBlue = UIColor(hex: 0x08bcef)
-let kColorBarChartBarGreen = UIColor(hex: 0x34b234)
 
 struct ChartAttributes {
     let color : UIColor

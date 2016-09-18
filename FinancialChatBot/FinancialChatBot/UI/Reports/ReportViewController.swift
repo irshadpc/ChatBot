@@ -1,10 +1,3 @@
-//
-//  ReportViewController.swift
-//  FinancialChatBot
-//
-//  Created by Andrew on 9/14/16.
-//  Copyright © 2016 Andrew Denisov. All rights reserved.
-//
 
 import Foundation
 import UIKit
@@ -61,7 +54,7 @@ private extension ReportViewController {
         footer.apply(self.reportModel)
         
         let reportLayout = ReportLayout()
-        reportLayout.layout(chart: barChart, to: self.view)
+        reportLayout.layout(barChart, to: self.view)
         reportLayout.layout(header, to: barChart)
         reportLayout.layout(footer, to: barChart)
     }

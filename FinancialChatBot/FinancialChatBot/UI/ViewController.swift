@@ -1,10 +1,4 @@
-//
-//  ViewController.swift
-//  FinancialChatBot
-//
-//  Created by Andrew Denisov on 9/12/16.
-//  Copyright © 2016 Andrew Denisov. All rights reserved.
-//
+
 
 import UIKit
 
@@ -29,11 +23,9 @@ class ViewController: UIViewController {
         return true
     }
 
-    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         messageController.sendMessage("Покажи мне отчет", sender: "Andrew1")
-        showReport()
     }
     
     func setupMessageUI() {
@@ -50,15 +42,8 @@ class ViewController: UIViewController {
         }
     }
     
-    func showReport() {
-        let data = DataStorage.sharedInstance
-        data.add(15, to: "test")
-        data.add(25, to: "test2")
-        data.add(30, to: "test3")
-        data.add(10, to: "test4")
-        
-        let report = data.financialReport()
-        let reportController = ReportViewController(reportData: report)
+    func showReport(data:FinancialReport) {
+        let reportController = ReportViewController(reportData: data)
         self.presentViewController(reportController, animated: true, completion:nil)
     }
 }

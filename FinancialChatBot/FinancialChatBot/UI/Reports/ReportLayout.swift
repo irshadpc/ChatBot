@@ -1,23 +1,16 @@
-//
-//  ReportLayout.swift
-//  FinancialChatBot
-//
-//  Created by Andrew on 9/14/16.
-//  Copyright © 2016 Andrew Denisov. All rights reserved.
-//
 
 import Foundation
 import FLKAutoLayout
 
 private let kJBBarChartViewControllerChartHeight: CGFloat = 450
-private let kJBBarChartViewControllerChartPadding: CGFloat = 10
+private let kJBBarChartViewControllerChartPadding: CGFloat = 40
 private let kJBBarChartViewControllerChartHeaderHeight: CGFloat = 80
 private let kJBBarChartViewControllerChartHeaderPadding : CGFloat = 20
 private let kJBBarChartViewControllerChartFooterHeight : CGFloat  = 25
 
 struct ReportLayout {
 
-    func layout(chart chart:JBBarChartView, to view:UIView) {
+    func layout(chart:JBBarChartView, to view:UIView) {
         view.addSubview(chart)
         chart.frame = CGRectMake(kJBBarChartViewControllerChartPadding, kJBBarChartViewControllerChartPadding, view.bounds.size.width - (kJBBarChartViewControllerChartPadding * 2), kJBBarChartViewControllerChartHeight);
         chart.headerPadding = kJBBarChartViewControllerChartHeaderPadding;
