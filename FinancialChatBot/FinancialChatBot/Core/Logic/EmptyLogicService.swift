@@ -15,7 +15,7 @@ struct EmptyLogicService : LogicService {
     func processInput(input:ChatStatement) -> (ChatStatement, Float) {
         
         if category == classifier.classify(input.fullText())  {
-            let response = ChatStatement(text: "Привет")
+            let response = ChatStatement(text: "Hi")
             return (response,1)
         }
         

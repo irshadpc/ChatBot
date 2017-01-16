@@ -59,7 +59,7 @@ struct SpentRemainingLogicService : LogicService {
         
         // Bayes classifier is not valid for case, when we have only number
         if nounTags.count == 0 && numberTag.count > 0 {
-            let response = ChatStatement(text: "Получил или потратил?")
+            let response = ChatStatement(text: "I received or spent?")
             return (response,1)
         }
         
@@ -69,12 +69,12 @@ struct SpentRemainingLogicService : LogicService {
         }
         
         if numberTag.count == 0 && nounTags.count > 0 {
-            let response = ChatStatement(text: "Сколько?")
+            let response = ChatStatement(text: "How many?")
             return (response,1)
         }
         
         if nounTags.count == 1 {
-            let response = ChatStatement(text: "На что?")
+            let response = ChatStatement(text: "For what?")
             return (response,1)
         }
 
@@ -85,7 +85,7 @@ struct SpentRemainingLogicService : LogicService {
             save(number, category: category)
         }
         
-        var response = ChatStatement(text: "Принято")
+        var response = ChatStatement(text: "Accepted")
         response.finishStatement = true
         return (response,1)
         

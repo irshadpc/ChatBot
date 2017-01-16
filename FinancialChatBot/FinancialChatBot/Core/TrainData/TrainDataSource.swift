@@ -8,8 +8,8 @@ protocol TrainDataSource {
 struct SpentDataSource : TrainDataSource {
     func trainData() -> [String] {
         return [
-            "потратил","на","еду","истратил","потратила","потратило","пробил","промотал","промотало",
-            "просадил","тратил","подкупил","покупал" ,"прикупил","приобрел","приобретало","раздобыл","в","магазин"
+            "I spent","on","food","Spent", "spent", "spent", "shot", "squandered", "squandered",
+            "Squandered", "spending", "bribed", "buy", "bought", "acquired", "acquired", "procured", "c", "shop"
         ]
     }
 }
@@ -17,9 +17,9 @@ struct SpentDataSource : TrainDataSource {
 struct RemainingDataSource : TrainDataSource {
     func trainData() -> [String] {
         return [
-            "жаловал","заполучил", "заработал", "заслужил",
-            "обзавелся","обрел","приобрел","получил","денег","вернули","долг","долга","зарплата","пришла","заплатил","заплатили",
-            "зарплата","зарплату","деньги",
+            "Bestowed", "acquired", "earned", "earned",
+            "Acquired", "acquired", "acquired", "received", "money", "back", "debt", "debt", "salary", "come", "pay", "pay",
+            "Wages", "salary", "money",
         ]
     }
 }
@@ -28,7 +28,10 @@ struct ReportDataSource : TrainDataSource {
     
     func trainData() -> [String] {
         return [
-            "сколько", "потратил","отчет", "трачу","потратил","за","покажи","cформируй","дай","отчитайся"
+            
+            "How much", "spent", "report",
+            "spending", "spent", "for", "show",
+            "cformiruy", "give", "Report back"
         ]
     }
 }
@@ -36,7 +39,7 @@ struct ReportDataSource : TrainDataSource {
 struct StopWordsSource : TrainDataSource {
     func trainData() -> [String] {
         return [
-            "привет", "здравствуй","как","дела"
+          "Hello", "hello", "how", "business",
         ]
     }
 

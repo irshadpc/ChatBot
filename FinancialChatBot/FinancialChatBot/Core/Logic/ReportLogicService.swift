@@ -17,10 +17,10 @@ struct ReportLogicService : LogicService {
         
         let inputText = input.fullText()
         if classifier.classify(inputText) == category &&
-            inputText.rangeOfString("отчет") != nil {
+            inputText.rangeOfString("report") != nil {
             
             self.showReport()
-            var response = ChatStatement(text: "Сейчас сформирую отчет")
+            var response = ChatStatement(text: "Who will form report")
             response.finishStatement = true
             return (response,1)
         }
